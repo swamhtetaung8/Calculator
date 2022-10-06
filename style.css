@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans',
+        sans-serif;;
+}
+
+body{
+    background-color: black;
+}
+
+.calc{
+    width:450px;
+    margin: 100px auto;
+}
+
+.display{
+    color: white;
+    text-align: right;
+    font-size: 5rem;
+    padding: 0 20px;
+    height: 120px;
+}
+
+.key{
+    width: 90px;
+    height: 90px;
+    background-color: #333333;
+    border-radius: 50%;
+    margin: 10px;
+    color: white;
+    text-align: center;
+    line-height: 90px;
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.2s;
+    user-select: none;
+}
+
+.key:active{
+    background-color: #33333390;
+}
+
+.zero{
+    width: 200px;
+    border-radius: 60px;
+}
+
+.buttons table tr:first-child .key{
+    background-color: #a5a5a5;
+    color: black;
+    transition: 0.2s;
+}
+
+.buttons table tr:first-child .key:active{
+    background-color: #a5a5a590;
+}
+
+.buttons table tr td:last-child .key{
+    background-color: #f58d38;
+    color: white;
+    transition: 0.2s;
+}
+
+.buttons table tr td:last-child .key:active{
+    background-color: #f58d3890;
+}
